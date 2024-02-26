@@ -22,4 +22,12 @@ export class MainPageComponent {
     }
   ];
 
+  public addCharacter(character: Character): void {
+    this.characters.push(character);
+  }
+
+  public removeCharacter(index: number): void {
+    this.characters.splice(index, 1);
+  }
+
 }
