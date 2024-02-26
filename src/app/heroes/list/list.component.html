@@ -1,11 +1,11 @@
 <h3>Listado de Héroes</h3>
 
 <div *ngIf="deletedHeroe; else nothingWasDeleted">
-  <h4>Héroe eliminado <small class="text-danger">{{ deletedHeroe }}</small></h4>
+  <h5>Héroe eliminado <small class="text-danger">{{ deletedHeroe }}</small></h5>
 </div>
 
 <ng-template #nothingWasDeleted>
-  <h3>No ha eliminado ningún héroe.</h3>
+  <h5>No ha eliminado ningún héroe.</h5>
 </ng-template>
 
 <button
