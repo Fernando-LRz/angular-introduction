@@ -1,0 +1,23 @@
+<h1>{{ name }}</h1>
+
+<dl>
+  <td>Name</td>
+  <dd>{{ name }}</dd>
+
+  <td>Edad</td>
+  <dd>{{ age }}</dd>
+
+  <td>Método</td>
+  <dd>{{ getHeroDescription() }}</dd>
+
+  <td>Capitalizado</td>
+  <dd>{{ getCapitalizeName }}</dd>
+</dl>
+
+<button class="btn btn-primary me-3" (click)="changeHeroName()">
+  Cambiar nombre
+</button>
+
+<button class="btn btn-primary" (click)="changeHeroAge()">
+  Cambiar edad
+</button>
