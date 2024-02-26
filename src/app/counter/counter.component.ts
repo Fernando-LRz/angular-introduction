@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <h3>Counter: {{ counter }}</h3>
     <button (click)="increaseCounterBy(-1)">-1</button>
-    <button (click)="resetCounter()">Reset</button>
+    <button (click)="resetCounter()">Resetear</button>
     <button (click)="increaseCounterBy(+1)">+1</button>
   `
 })
@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
 export class CounterComponent {
   constructor() { }
 
-  public title: string = 'Learning Angular';
+  public title: string = 'Aprendiendo Angular';
   public counter: number = 0;
 
   increaseCounterBy(value: number): void {
